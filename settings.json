@@ -1,18 +1,20 @@
 {
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Tokyo Night Light",
+  "remote.SSH.remotePlatform": {
+      "nmax": "linux"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.linkedEditing": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0.5,
   "launch": {},
   "[json]": {},
-  "workbench.statusBar.visible": false,
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "update.showReleaseNotes": false,
-  "workbench.activityBar.visible": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
   "editor.lineNumbers": "relative",
@@ -48,8 +50,6 @@
     },
     // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
@@ -79,14 +79,4 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
 }
